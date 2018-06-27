@@ -1,26 +1,12 @@
 {% extends "myadmin/public/base.html" %}
 
-{% block head %}
-        <div class="tpl-content-wrapper">
-            <div class="container-fluid am-cf">
-                <div class="row">
-                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-9">
-                        <div class="page-header-heading"><span class="am-icon-home page-header-heading-icon"></span> 添加会员信息</div>
-                        <p class="page-header-description"></p>
-                    </div>
-                    <div class="am-u-lg-3 tpl-index-settings-button">
-                        <button type="button" class="page-header-button"><span class="am-icon-paint-brush"></span> 设置</button>
-                    </div>
-                </div>
-            </div>
-{% endblock %}
 {% block haha %}
 <div class="row-content am-cf">
     <div class="row">
         <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
             <div class="widget am-cf">
                 <div class="widget-head am-cf">
-                    <div class="widget-title am-fl">会员信息</div>
+                    <div class="widget-title am-fl">修改个人信息</div>
                     <div class="widget-function am-fr">
                         <a href="javascript:;" class="am-icon-cog"></a>
                     </div>
@@ -32,7 +18,7 @@
                             <label for="user-name" class="am-u-sm-3 am-form-label">会员姓名
                             </label>
                             <div class="am-u-sm-9">
-                                <input type="text" name='username' class="tpl-form-input" id="user-name" placeholder="请输入会员姓名">
+                                <input type="text" name='username' class="tpl-form-input" id="user-name" placeholder="请输入修改的会员姓名">
                             </div>
                         </div>
 
@@ -40,15 +26,7 @@
                             <label for="user-name"  class="am-u-sm-3 am-form-label">会员年龄
                             </label>
                             <div class="am-u-sm-9">
-                                <input type="text" name='age' class="tpl-form-input" id="user-name" placeholder="请输入会员年龄">
-                            </div>
-                        </div>
-
-                        <div class="am-form-group">
-                            <label for="user-name"  class="am-u-sm-3 am-form-label">密码
-                            </label>
-                            <div class="am-u-sm-9">
-                                <input type="password" name='password' class="tpl-form-input" id="user-name" placeholder="请输入密码">
+                                <input type="text" name='age' class="tpl-form-input" id="user-name" placeholder="请输入修改后的会员年龄">
                             </div>
                         </div>
 
@@ -56,7 +34,7 @@
                             <label for="user-name"  class="am-u-sm-3 am-form-label">邮箱
                             </label>
                             <div class="am-u-sm-9">
-                                <input type="text" name='email' class="tpl-form-input" id="user-name" placeholder="请输入会员邮箱">
+                                <input type="text" name='email' class="tpl-form-input" id="user-name" placeholder="请输入修改的邮箱">
                             </div>
                         </div>
 
@@ -64,13 +42,13 @@
                             <label for="user-name"  class="am-u-sm-3 am-form-label">手机号
                             </label>
                             <div class="am-u-sm-9">
-                                <input type="text" name='phone' class="tpl-form-input" id="user-name" placeholder="请输入会员手机号">
+                                <input type="text" name='phone' class="tpl-form-input" id="user-name" placeholder="请输入修改后的会员手机号">
                             </div>
                         </div>
 
                         <div class="am-form-group">
                         <label for="user-name" class="am-u-sm-3 am-form-label">
-                            性别
+                            修改性别
                         </label>
                         <div class="am-u-sm-9">
                             <label class="am-radio-inline"><input type="radio" value="男" name="sex" checked> 男</label>
@@ -78,23 +56,22 @@
                         </div>
                     </div>
 
-                    <div class="am-form-group">
-                        <label for="user-weibo" class="am-u-sm-3 am-form-label">上传头像 </label>
-                        <div class="am-u-sm-9">
-                            <div class="am-form-group am-form-file">
-                                <button type="button" class="am-btn am-btn-danger am-btn-sm">
-                                <i class="am-icon-cloud-upload"></i> 添加头像</button>
-                                <input id="doc-form-file" type="file" name="pic" multiple="">
+                        
+                        <div class="am-form-group">
+                            <label for="user-weibo" class="am-u-sm-3 am-form-label">头像
+                            </label>
+                            <div class="am-u-sm-9">
+                                <div class="am-form-group am-form-file">
+                                    <div class="tpl-form-file-img">
+                                    <button type="button"  class="am-btn am-btn-danger am-btn-sm">
+                                        <i class="am-icon-cloud-upload"></i>上传头像</button>
+                                    <input id="doc-form-file" name='pic' type="file" multiple=""></div>
                             </div>
                         </div>
-                    </div>
-
-
-
-
+                        </div>
                         <div class="am-form-group">
                             <div class="am-u-sm-9 am-u-sm-push-3">
-                                <button class="am-btn am-btn-primary tpl-btn-bg-color-success ">提交</button></div>
+                                <button class="am-btn am-btn-primary tpl-btn-bg-color-success ">修改</button></div>
                         </div>
                     </form>
                 </div>

@@ -10,7 +10,6 @@ class Users(models.Model):
 	age = models.IntegerField(null=True)
 	sex = models.CharField(max_length=1,null=True)
 	pic = models.CharField(max_length=100,null=True)
-
 	#会员状态和注册时间
 	#会员状态0 正常 1禁用
 	status = models.IntegerField(default=0)
