@@ -1,10 +1,10 @@
 from django.conf.urls import url,include
 from django.contrib import admin
-from . import views
+from .views import userviews
 urlpatterns = [
-    url(r'^$',views.index,name='myadmin'),
-    url(r'^add/$',views.add,name='myadd'),
-    url(r'^list/$',views.list,name='mylist'),
-    url(r'^edit/$',views.edit,name='myedit'),
-    url(r'^delete/$',views.delete,name='mydelete')
+    url(r'^$',userviews.index,name='myadmin'),
+    url(r'^add/$',userviews.add,name='myadd'),
+    url(r'^list/$',userviews.list,name='mylist'),
+    url(r'^edit/$',userviews.edit,name='myedit'),
+    url(r'^delete/$',userviews.delete,name='mydelete')
 ]
